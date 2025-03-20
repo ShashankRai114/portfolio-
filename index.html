@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank Shekhar Rai - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+          <div class="logo">Shashank Shekhar Rai</div>
+          <button id="nav-toggle" class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav id="nav-menu" class="nav-menu">
+            <ul class="nav-links">
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+              </button>
+          </nav>
+        </div>
+      </header>
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <div class="about-content">
+            <div class="about-photo">
+                <img src="https://as1.ftcdn.net/v2/jpg/03/39/45/96/1000_F_339459697_XAFacNQmwnvJRqe1Fe9VOptPWMUxlZP8.jpg" alt="Shashank Shekhar Rai" class="avatar">
+            </div>
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>👋 Hi there! I'm<span class="highlight"> Shashank Shekhar Rai</span>, a passionate and innovative <span class="highlight"> Full Stack Engineer</span> with a flair for creating stunning and highly functional websites and applications. My expertise spans <span class="highlight"> front-end design to back-end development</span>, ensuring seamless user experiences and robust performance. With a keen eye for detail and a commitment to excellence, I strive to bring creative visions to life through clean code and cutting-edge technology. Let's collaborate and transform ideas into amazing digital realities!</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <h1>Skills</h1>
+        <div class="skills-grid">
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, React, Node.js</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Figma, Adobe XD, Wireframing, Prototyping</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-tools"></i>
+                <h3>Tools</h3>
+                <p>Git, VS Code</p>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <h1>Projects</h1>
+        <div class="filter-buttons">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="web">Web Development</button>
+            <button data-filter="design">Design</button>
+        </div>
+        <div class="project-grid">
+            <div class="project" data-category="web">
+                <h2>Project 1</h2>
+                <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/ShashankRai114/Myburgerrestro" class="btn">View Project</a>
+            </div>
+            <div class="project" data-category="design">
+                <h2>Project 2</h2>
+                <p>A responsive Portfolio website built with HTML, CSS, and JavaScript.</p>   
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <h1>Contact Me</h1>
+        <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Shashank Shekhar Rai. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/ShashankRai114"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shashank-shekhar-rai-2363a8298/"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="func.js"></script>
+</body>
+</html>
